@@ -3,11 +3,13 @@ plan apply_class (
   String[1]  $classname,
 ) {
 
-  $result = apply($nodes) {
+  $nodes.apply_prep()
+
+  $results = apply($nodes) {
     include($classname)
   }
 
-  apply_class::print_result($result)
+  $results.apply_class::print_result()
 
-  return($result.ok())
+  return($results.ok())
 }

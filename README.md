@@ -13,7 +13,14 @@ The README template below provides a starting point with details about what info
 
 ## Usage
 
+If working with a Bolt project containing a Puppetfile (such as a control-repo), start by deploying all the referenced modules into the project directory.
+
 ```
-bolt puppetfile install
-bolt plan run apply_class --target=mynode.example.com class=role::webserver
+bolt puppetfile install -v
+```
+
+Then, use the apply\_class plan to compile a catalog for the target 
+
+```
+bolt plan run apply_class --target=mynode.example.com classname=apply_class::test
 ```
