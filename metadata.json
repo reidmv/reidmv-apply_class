@@ -2,9 +2,10 @@
   "name": "reidmv-apply_class",
   "version": "0.1.0",
   "author": "Reid Vandewiele",
-  "summary": "",
+  "summary": "Utility Bolt plan for use in a Puppet development workflow",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/reidmv/reidmv-apply_class",
+  "issues_url": "https://github.com/reidmv/reidmv-apply_class/issues",
   "dependencies": [
 
   ],
